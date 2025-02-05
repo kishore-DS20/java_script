@@ -52,3 +52,9 @@
 // let b="10";
 // isEqual=a===b ? true:false
 // console.log(isEqual);
+
+// let i = 10;
+
+// if (i > 15) {
+//     console.log("10 is less than 15");
+// }
