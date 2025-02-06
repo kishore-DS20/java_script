@@ -47,3 +47,98 @@
 // let hasPassport=true;
 // let travelReady = (age  >=18 && hasPassport) ? "you are ready to travel" : "you are not eligible";  //you are ready to travel
 // console.log(travelReady);
+
+
+// Define an array of users with various attributes
+// const users = [
+//     { id: 1, name: 'Alice', age: 25, role: 'admin', active: true },
+//     { id: 2, name: 'Bob', age: 30, role: 'user', active: false },
+//     { id: 3, name: 'Charlie', age: 22, role: 'user', active: true },
+//     { id: 4, name: 'Dave', age: 35, role: 'moderator', active: true },
+//     { id: 5, name: 'Eve', age: 28, role: 'admin', active: false }
+//   ];
+  
+//   // Function to check and log user details based on their role and active status
+//   function logUserDetails(users) {
+//     for (let i = 0; i < users.length; i++) {
+//       const user = users[i];
+      
+//       // Using a ternary operator for active status check
+//       const status = user.active ? 'active' : 'inactive';
+  
+//       // Conditional logic for different roles
+//       switch (user.role) {
+//         case 'admin':
+//           console.log(`Admin: ${user.name}, Age: ${user.age}, Status: ${status}`);
+//           break;
+//         case 'moderator':
+//           console.log(`Moderator: ${user.name}, Age: ${user.age}, Status: ${status}`);
+//           break;
+//         case 'user':
+//           console.log(`User: ${user.name}, Age: ${user.age}, Status: ${status}`);
+//           break;
+//         default:
+//           console.log(`Unknown role for: ${user.name}`);
+//       }
+      
+//       // Nested loop example: for each user, we loop through their friends (if any)
+//       const friends = user.friends || []; // Let's assume we may have a friends array
+//       if (friends.length > 0) {
+//         console.log(`${user.name}'s Friends:`);
+//         for (let j = 0; j < friends.length; j++) {
+//           console.log(`- ${friends[j]}`);
+//         }
+//       } else {
+//         console.log(`${user.name} has no friends listed.`);
+//       }
+      
+//       // Break condition when an admin user is encountered
+//       if (user.role === 'admin') {
+//         console.log('Breaking loop since an admin was found.');
+//         break; // Exit the loop early
+//       }
+//     }
+//   }
+  
+//   // Function to find the highest age in the users array
+//   function findHighestAge(users) {
+//     let highestAge = -1;
+//     let oldestUser = null;
+  
+//     for (let i = 0; i < users.length; i++) {
+//       const user = users[i];
+//       if (user.age > highestAge) {
+//         highestAge = user.age;
+//         oldestUser = user;
+//       }
+//     }
+  
+//     if (oldestUser) {
+//       console.log(`Oldest User: ${oldestUser.name}, Age: ${oldestUser.age}`);
+//     } else {
+//       console.log('No users found.');
+//     }
+//   }
+  
+//   // Function to check all users' activity
+//   function checkUsersActivity(users) {
+//     let activeCount = 0;
+//     let inactiveCount = 0;
+  
+//     for (let i = 0; i < users.length; i++) {
+//       const user = users[i];
+//       if (user.active) {
+//         activeCount++;
+//       } else {
+//         inactiveCount++;
+//       }
+//     }
+  
+//     console.log(`Active Users: ${activeCount}, Inactive Users: ${inactiveCount}`);
+//   }
+  
+//   // Running the functions to see results
+//   logUserDetails(users);
+//   findHighestAge(users);
+//   checkUsersActivity(users);
+  
